@@ -6,6 +6,7 @@ from typing import List
 from unittest import TestCase
 
 
+# Solution Class
 class Solution:
 
     def finalValueAfterOperations(self, operations: List[str]) -> int:

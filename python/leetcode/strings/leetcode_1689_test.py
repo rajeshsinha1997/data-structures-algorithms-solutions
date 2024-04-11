@@ -2,10 +2,10 @@
 # tags - string, greedy
 
 
-# Solution Class
 from unittest import TestCase
 
 
+# Solution Class
 class Solution:
 
     def minPartitions(self, n: str) -> int:
