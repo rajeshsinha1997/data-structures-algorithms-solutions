@@ -36,9 +36,14 @@ class Codec:
         """
 
         # iterate over the mapping and return the long URL corresponding to the short URL given
-        return next(
-            (__key for __key, __value in self.__short_urls.items() if __value == int(shortUrl)),
-              '')
+        for __key, __value in self.__short_urls.items():
+            # check if the short URL is same as the current value
+            if __value == int(shortUrl):
+                # return the corresponding long URL
+                return __key
+
+        # return an empty string
+        return ''
 
 
 # Test Class
